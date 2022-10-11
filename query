@@ -1,0 +1,4 @@
+  UPDATE mbx_message SET CREATED_DATETIME = TO_DATE('2019-10-01 12:10:00', 'yyyy-mm-dd hh24:mi:ss') 
+  where CREATED_DATETIME between to_date('2022-06-06 13:00:00','YYYY-MM-DD HH24:MI:SS')  
+  and to_date('2022-06-06 23:59:59','YYYY-MM-DD HH24:MI:SS') 
+  and message_name like '%TEST_062022_MOBILE%'
